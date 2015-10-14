@@ -1,0 +1,4 @@
+#!/usr/bin/env node
+
+process.stdout.write("helloworld\n"); 
+//console.log("helloworld");
