@@ -1,0 +1,8 @@
+#!/usr/bin/env node
+
+'use strict';
+
+var c = require('skilstak-colors');
+var pi = process.stdout;
+
+pi.write(c.cl + c.rc() +"Hi,World" + "\n");
