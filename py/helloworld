@@ -2,17 +2,25 @@
 import skilstak.colors as c
 import time
 
-def plain()
+def print_plain()
+    (c.clear + c.rc() + "hello" + c.rc() + "world")
     """clear screen and prints helloworld"""
-    print(c.clear + c.rc() + "hello" + c.rc() + "world")
+    
 
-def multi():
+def print_multi():
     """prints helloworld in multiple colors"""
     while True:
         print(c.clear + c.multi("hello world"))
         time.sleep(0.5)
     
-def hello():
+def print_color():
+    """fill screen with randomly color helloworld"""
+    print(c.clear)
+    while True:
+        print(c.rc() + "helloworld" + c.reset, end=" ")  
+        
+
+def parse_argsZZ ():
     """runs helloworld"""
     try:
         while True:
