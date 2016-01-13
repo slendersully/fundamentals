@@ -1,4 +1,16 @@
 #!/usr/bin/env node
+"use strict"
 
-"use strict";
-console.log("Hello World");
+var c = require('skilstak-colors')
+function printPlain() {
+  
+  console.log("Hello World");
+}
+var printPlain = function () {
+
+  console.log(c Blue)
+
+
+
+
+printPlain();
