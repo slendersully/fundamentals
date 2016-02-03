@@ -6,17 +6,19 @@ function printPlain() {
   
   console.log("Hello World");
 }
-var printColor = function (message) {
+var printColor = function (name) {
 
-  console.log(c.b + message)
+  console.log(c.b + name)
 
 }
-var printMulti = function (message) {
+var printMulti = function (name) {
   
-  console.log(c.y + message)
+  console.log(c.y + name)
 }
 
+var firstArg = process.argv[2] 
 
+printMulti(firstArg);
 
 printColor("troy is boring");
 printMulti("troy is not as cool as me");
