@@ -1,27 +1,33 @@
 #!/usr/bin/env node
+
 "use strict"
 
 var c = require('skilstak-colors')
-function printPlain() {
-  
+function printPlain() { 
   console.log("Hello World");
 }
 var printColor = function (name) {
-
   console.log(c.b + name)
-
 }
 var printMulti = function (name) {
-  
   console.log(c.y + name)
 }
+//var name = "World";
+//var option = "-m";
+var firstArg = process.argv[2]; 
+console.log(firstArg)
+//printMulti(firstArg);
+//printColor("troy is boring");
+//printMulti("troy is not as cool as me");
 
-var firstArg = process.argv[2] 
 
-printMulti(firstArg);
 
-printColor("troy is boring");
-printMulti("troy is not as cool as me");
+
+
+
+
+
+
 
 
 
